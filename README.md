@@ -1,10 +1,11 @@
-Mio Trio
+MioTrio
 ======
-Unfinished small video game prototype. Escape a dungeon, while playing 3 brave heroes at the same time!
+*Unfinished* small video game prototype. Escape a dungeon, while playing 3 brave heroes at the same time!
 
+Concept Art:
 ![Concept Art](concept.png)
 
-Created from a Game Jam idea, but unfinished so far. Let's see what the future brings :)
+Created as a hobby project from a Game Jam idea, but unfinished yet. Let's see what the future brings :)
 
 
 Info
