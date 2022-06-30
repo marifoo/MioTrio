@@ -125,22 +125,22 @@ class Player(Entity):
 			else:
 				self.direction.x = 0
 
-			if self.is_main_player:
-				# attack input
-				if keys[pygame.K_a]:
-					self.attacking = True
-					self.attack_time = pygame.time.get_ticks()
-					self.create_attack(self)
-					self.weapon_attack_sound.play()
-
-				# magic input
-				if keys[pygame.K_s]:
-					self.attacking = True
-					self.attack_time = pygame.time.get_ticks()
-					style = list(magic_data.keys())[self.magic_index]
-					strength = list(magic_data.values())[self.magic_index]['strength'] + self.stats['magic']
-					cost = list(magic_data.values())[self.magic_index]['cost']
-					self.create_magic(self, style, strength, cost)
+			# if self.is_main_player:
+			# 	# attack input
+			# 	if keys[pygame.K_a]:
+			# 		self.attacking = True
+			# 		self.attack_time = pygame.time.get_ticks()
+			# 		self.create_attack(self)
+			# 		self.weapon_attack_sound.play()
+			#
+			# 	# magic input
+			# 	if keys[pygame.K_s]:
+			# 		self.attacking = True
+			# 		self.attack_time = pygame.time.get_ticks()
+			# 		style = list(magic_data.keys())[self.magic_index]
+			# 		strength = list(magic_data.values())[self.magic_index]['strength'] + self.stats['magic']
+			# 		cost = list(magic_data.values())[self.magic_index]['cost']
+			# 		self.create_magic(self, style, strength, cost)
 
 	def get_status(self):
 
